@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="icon" href="images/logo@2x.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="bg-sec vh-100">
+        <div class="container py-5 text-center text-white">
+            <h1 class="pb-2">Weather</h1>
+            <div class="d-flex justify-content-center">
+                <input id="search" type="text" class="py-2 px-4 rounded-5 border-0 form-control w-50 "
+                    placeholder="Find your location...">
+            </div>
+
+            <div class="row g-0 text-white py-5">
+
+                <div class="col-4 forecast rounded-start-3">
+                    <div class="forecast-header w-100 d-flex justify-content-between" id="today">
+                        <div class="day"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="forecast-content my-4" id="current">
+                        <div class="d-flex justify-content-around ">
+                            <div>
+                                <div id="todayLocation" class="fs-1 mb-3"></div>
+                                <div id="todayDegree" class="mb-2"></div>
+                                <div id="todayText"></div>
+                            </div>
+                            <div class="icon">
+                                <img id="todayImg" src="" alt="" width="120">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <span id="humidity" class="pe-3"></span>
+                            <span id="wind" class="pe-3"></span>
+                            <span id="compass"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 forecast">
+                    <div class="forecast-header">
+                        <div class="nextDay"></div>
+                    </div>
+                    <div class="forecast-content my-4">
+                        <div class="forecast-icon mb-2">
+                            <img class="fIcon" src="" alt="" width="90">
+                        </div>
+                        <div class="degree fs-3 mb-2"></div>
+                        <small class="fs-6 mb-3"></small>
+                        <div class="text mt-2 fs-4"></div>
+                    </div>
+                </div>
+
+                <div class="col-4 forecast rounded-end-3">
+                    <div class="forecast-header">
+                        <div class="nextDay"></div>
+                    </div>
+                    <div class="forecast-content my-4">
+                        <div class="forecast-icon mb-2">
+                            <img class="fIcon" src="" alt="" width="90">
+                        </div>
+                        <div class="degree fs-3 mb-2"></div>
+                        <small class="fs-6 mb-3"></small>
+                        <div class="text mt-2 fs-4"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- <footer>
+        <div class="container text-center py-4">
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            <div>
+                <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer> -->
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

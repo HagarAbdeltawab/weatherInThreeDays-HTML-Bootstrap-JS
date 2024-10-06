@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Roboto, "Open Sans", sans-serif;
+}
+
+.navbar{
+    background-color: #1e202b !important; 
+}
+
+
+small{
+    font-size: 10px;
+    font-weight: 300;
+} 
+
+.bg-sec{
+    background-image: url('../images/banner.png');
+    background-size: cover; 
+    background-position: center;
+    background-color: #1e202b;
+}
+
+
+.forecast-header{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center; 
+}
+.forecast{ 
+    background-color: #323544; 
+}
+.forecast:nth-child(even) {
+    background-color: #262936;
+}
+
+
+/* 
+footer{
+    background-color: #262936;
+    color: white;
+} */
