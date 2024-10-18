@@ -22,6 +22,9 @@ displayAll();
 search.addEventListener('input', async function(){
     displayAll(search.value.trim());
 })
+document.addEventListener('load', async function () {
+    displayAll(search.value.trim());
+})
 
 async function getData (city){ 
     let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=f427a484de814d1aac2201538240510&q=${city}&days=3`);
@@ -56,6 +59,7 @@ function displayNext(data){
         text[i].innerHTML = forecast[i + 1].day.condition.text;
     }
 }
+
 
 async function displayAll(searchValue="cairo"){
     let data = await getData(searchValue);
